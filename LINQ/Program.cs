@@ -19,7 +19,10 @@ namespace LINQ
 
             var output1 = users.Where(u => u.role == "admin").FirstOrDefault();
             var output2 = users.Where(u => u.login.StartsWith("a"));
+            var output3 = users.OrderBy(u => u.login);
+            Console.WriteLine(output1);
             Console.WriteLine(output2);
+            Console.WriteLine(output3);
         }
 
     }
